@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `PWQuality` struct in crate `pwquality`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, PWQuality">
+
+    <title>pwquality::PWQuality - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct PWQuality</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='index.html'>pwquality</a></p><script>window.sidebarCurrent = {name: 'PWQuality', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>pwquality</a>::<wbr><a class="struct" href=''>PWQuality</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/pwquality/lib.rs.html#128-130' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PWQuality { /* fields omitted */ }</pre><div class='docblock'><p>Representation of an instance of <code>pwquality</code>.
+Each instance has its own settings, that can be
+changed.</p>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../pwquality/struct.PWQuality.html" title="struct pwquality::PWQuality">PWQuality</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#132-594' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class="method"><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#135-142' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Creates a new isntance with default settings.</p>
+</div><h4 id='method.from_default_config' class="method"><span id='from_default_config.v' class='invisible'><code>fn <a href='#method.from_default_config' class='fnname'>from_default_config</a>() -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;Self, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#146-148' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Creates a new instance with default configuration.</p>
+</div><h4 id='method.from_config' class="method"><span id='from_config.v' class='invisible'><code>fn <a href='#method.from_config' class='fnname'>from_config</a>&lt;P:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html" title="trait core::convert::AsRef">AsRef</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.Path.html" title="struct std::path::Path">Path</a>&gt;&gt;(config_path: P) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;Self, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#152-154' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Creates a new instance with given configuration file.</p>
+</div><h4 id='method.from_optional_config' class="method"><span id='from_optional_config.v' class='invisible'><code>fn <a href='#method.from_optional_config' class='fnname'>from_optional_config</a>&lt;P:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html" title="trait core::convert::AsRef">AsRef</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.Path.html" title="struct std::path::Path">Path</a>&gt;&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;config_path: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;P&gt;<br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;Self, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#158-176' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Creates a new instance with given configuration file.
+If <code>None</code> is passed, then default configuration is used.</p>
+</div><h4 id='method.set_min_diff' class="method"><span id='set_min_diff.v' class='invisible'><code>fn <a href='#method.set_min_diff' class='fnname'>set_min_diff</a>(&amp;self, min: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>&gt;)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#180-186' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the minimum number of changes required between old and new password.
+A value of <code>None</code> disables the check.</p>
+</div><h4 id='method.get_min_diff' class="method"><span id='get_min_diff.v' class='invisible'><code>fn <a href='#method.get_min_diff' class='fnname'>get_min_diff</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#190-201' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the minimum number of changes required between old and new password.
+Returns <code>None</code> if check is disabled.</p>
+</div><h4 id='method.set_min_length' class="method"><span id='set_min_length.v' class='invisible'><code>fn <a href='#method.set_min_length' class='fnname'>set_min_length</a>(&amp;self, min: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#205-210' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the minimum accepted length for a password.
+Any number less than <code>6</code> will be replaced by <code>6</code>.</p>
+</div><h4 id='method.get_min_length' class="method"><span id='get_min_length.v' class='invisible'><code>fn <a href='#method.get_min_length' class='fnname'>get_min_length</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#213-220' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the minimum accepted length for a password.</p>
+</div><h4 id='method.set_digit_credit' class="method"><span id='set_digit_credit.v' class='invisible'><code>fn <a href='#method.set_digit_credit' class='fnname'>set_digit_credit</a>(&amp;self, credit: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#226-231' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the digit credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having digits in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of digits required in a password.</li>
+</ul>
+</div><h4 id='method.get_digit_credit' class="method"><span id='get_digit_credit.v' class='invisible'><code>fn <a href='#method.get_digit_credit' class='fnname'>get_digit_credit</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#237-244' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the digit credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having digits in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of digits required in a password.</li>
+</ul>
+</div><h4 id='method.set_uppercase_credit' class="method"><span id='set_uppercase_credit.v' class='invisible'><code>fn <a href='#method.set_uppercase_credit' class='fnname'>set_uppercase_credit</a>(&amp;self, credit: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#250-255' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the uppercase letter credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having uppercase letters in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of uppercase letters required in a password.</li>
+</ul>
+</div><h4 id='method.get_uppercase_credit' class="method"><span id='get_uppercase_credit.v' class='invisible'><code>fn <a href='#method.get_uppercase_credit' class='fnname'>get_uppercase_credit</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#261-268' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the uppercase letter credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having uppercase letters in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of uppercase letters required in a password.</li>
+</ul>
+</div><h4 id='method.set_lowercase_credit' class="method"><span id='set_lowercase_credit.v' class='invisible'><code>fn <a href='#method.set_lowercase_credit' class='fnname'>set_lowercase_credit</a>(&amp;self, credit: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#274-279' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the lowercase letter credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having lowercase letters in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of lowercase letters required in a password.</li>
+</ul>
+</div><h4 id='method.get_lowercase_credit' class="method"><span id='get_lowercase_credit.v' class='invisible'><code>fn <a href='#method.get_lowercase_credit' class='fnname'>get_lowercase_credit</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#285-292' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the lowercase letter credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having lowercase letters in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of lowercase letters required in a password.</li>
+</ul>
+</div><h4 id='method.set_other_credit' class="method"><span id='set_other_credit.v' class='invisible'><code>fn <a href='#method.set_other_credit' class='fnname'>set_other_credit</a>(&amp;self, credit: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#298-303' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the other character credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having other characters in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of other characters required in a password.</li>
+</ul>
+</div><h4 id='method.get_other_credit' class="method"><span id='get_other_credit.v' class='invisible'><code>fn <a href='#method.get_other_credit' class='fnname'>get_other_credit</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#309-316' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the other character credit:</p>
+
+<ul>
+<li>if <code>credit &gt;= 0</code>, it represents the maximum credit for having other characters in a password;</li>
+<li>if <code>credit &lt; 0</code>, it represents the minimum number of other characters required in a password.</li>
+</ul>
+</div><h4 id='method.set_min_classes' class="method"><span id='set_min_classes.v' class='invisible'><code>fn <a href='#method.set_min_classes' class='fnname'>set_min_classes</a>(&amp;self, min: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#325-330' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the minimum required number of classes in a password.
+There a four available classes:</p>
+
+<ul>
+<li>digits: <code>[0-9]</code></li>
+<li>lowercase letters: <code>[a-z]</code></li>
+<li>uppercase letters: <code>[A-Z]</code></li>
+<li>other characters: <code>!$%&amp;#…</code></li>
+</ul>
+</div><h4 id='method.get_min_classes' class="method"><span id='get_min_classes.v' class='invisible'><code>fn <a href='#method.get_min_classes' class='fnname'>get_min_classes</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#333-340' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the minimum required number of classes in a password.</p>
+</div><h4 id='method.set_max_repeat' class="method"><span id='set_max_repeat.v' class='invisible'><code>fn <a href='#method.set_max_repeat' class='fnname'>set_max_repeat</a>(&amp;self, max: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#344-349' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the maximum size of allowed repeated characters sequences in a password.
+A value of <code>0</code> disables this check.</p>
+</div><h4 id='method.get_max_repeat' class="method"><span id='get_max_repeat.v' class='invisible'><code>fn <a href='#method.get_max_repeat' class='fnname'>get_max_repeat</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#352-359' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the maximum size of allowed repeated characters sequences in a password.</p>
+</div><h4 id='method.set_max_class_repeat' class="method"><span id='set_max_class_repeat.v' class='invisible'><code>fn <a href='#method.set_max_class_repeat' class='fnname'>set_max_class_repeat</a>(&amp;self, max: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#364-369' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the maximum size of allowed characters sequences of a same class in a
+password.
+A value of <code>0</code> disables this check,</p>
+</div><h4 id='method.get_max_class_repeat' class="method"><span id='get_max_class_repeat.v' class='invisible'><code>fn <a href='#method.get_max_class_repeat' class='fnname'>get_max_class_repeat</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#373-380' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the maximum size of allowed characters sequences of a same class in a
+password.</p>
+</div><h4 id='method.set_max_sequence' class="method"><span id='set_max_sequence.v' class='invisible'><code>fn <a href='#method.set_max_sequence' class='fnname'>set_max_sequence</a>(&amp;self, max: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#385-390' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the maximum size allowed for monotonic character sequences such as <code>12345</code> or <code>fedcb</code>
+in a password.
+A value of <code>0</code> disables this check.</p>
+</div><h4 id='method.get_max_sequence' class="method"><span id='get_max_sequence.v' class='invisible'><code>fn <a href='#method.get_max_sequence' class='fnname'>get_max_sequence</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#394-401' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the maximum size allowed for monotonic character sequences such as <code>12345</code> or <code>fedcb</code>
+in a password.</p>
+</div><h4 id='method.set_gecos_check' class="method"><span id='set_gecos_check.v' class='invisible'><code>fn <a href='#method.set_gecos_check' class='fnname'>set_gecos_check</a>(&amp;self, check: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#405-411' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets whether the check for the presence of words longer than 3 characters present in the
+<code>passwd</code> GECOS field of a user in a password is enabled.</p>
+</div><h4 id='method.get_gecos_check' class="method"><span id='get_gecos_check.v' class='invisible'><code>fn <a href='#method.get_gecos_check' class='fnname'>get_gecos_check</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#415-422' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns whether the check for the presence of words longer than 3 characters present in the
+<code>passwd</code> GECOS field of a user in a password is enabled.</p>
+</div><h4 id='method.set_dictionary_check' class="method"><span id='set_dictionary_check.v' class='invisible'><code>fn <a href='#method.set_dictionary_check' class='fnname'>set_dictionary_check</a>(&amp;self, check: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#425-431' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets whether the check that a password is contained in a dictionary is enabled.</p>
+</div><h4 id='method.get_dictionary_check' class="method"><span id='get_dictionary_check.v' class='invisible'><code>fn <a href='#method.get_dictionary_check' class='fnname'>get_dictionary_check</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#434-441' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns whether the check that a password is contained in a dictionary is enabled.</p>
+</div><h4 id='method.set_user_check' class="method"><span id='set_user_check.v' class='invisible'><code>fn <a href='#method.set_user_check' class='fnname'>set_user_check</a>(&amp;self, check: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#444-450' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets whether the check of username presence in a password is enabled.</p>
+</div><h4 id='method.get_user_check' class="method"><span id='get_user_check.v' class='invisible'><code>fn <a href='#method.get_user_check' class='fnname'>get_user_check</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#453-460' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns whether the check of username presence in a password is enabled.</p>
+</div><h4 id='method.set_enforcing' class="method"><span id='set_enforcing.v' class='invisible'><code>fn <a href='#method.set_enforcing' class='fnname'>set_enforcing</a>(&amp;self, check: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#463-469' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets whether a password that does not pass the checks should be rejected.</p>
+</div><h4 id='method.get_enforcing' class="method"><span id='get_enforcing.v' class='invisible'><code>fn <a href='#method.get_enforcing' class='fnname'>get_enforcing</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#472-479' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns whether a password that does not pass the checks should be rejected.</p>
+</div><h4 id='method.set_dictionary_path' class="method"><span id='set_dictionary_path.v' class='invisible'><code>fn <a href='#method.set_dictionary_path' class='fnname'>set_dictionary_path</a>(&amp;self, path: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#482-492' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the path to the dictionary to use (other than the default cracklib one).</p>
+</div><h4 id='method.get_dictionary_path' class="method"><span id='get_dictionary_path.v' class='invisible'><code>fn <a href='#method.get_dictionary_path' class='fnname'>get_dictionary_path</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#495-510' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the path to the dictionary to use (if any other than the default cracklib one).</p>
+</div><h4 id='method.set_bad_words' class="method"><span id='set_bad_words.v' class='invisible'><code>fn <a href='#method.set_bad_words' class='fnname'>set_bad_words</a>(&amp;self, bad_words: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#514-525' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the list of words longer than 3 characters that are not allowed in a password.
+Words cannot contain whitespaces, otherwise will be considered as separate words.</p>
+</div><h4 id='method.get_bad_words' class="method"><span id='get_bad_words.v' class='invisible'><code>fn <a href='#method.get_bad_words' class='fnname'>get_bad_words</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#528-544' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the list of forbidden words in a password.</p>
+</div><h4 id='method.generate_password' class="method"><span id='generate_password.v' class='invisible'><code>fn <a href='#method.generate_password' class='fnname'>generate_password</a>(&amp;self, entropy: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#547-562' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Generates a password with the given number of bits of entropy.</p>
+</div><h4 id='method.check' class="method"><span id='check.v' class='invisible'><code>fn <a href='#method.check' class='fnname'>check</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;password: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;old_password: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;, <br>&nbsp;&nbsp;&nbsp;&nbsp;username: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>&gt;<br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#565-592' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Checks a password according to the settings and returns the computed score.</p>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../pwquality/struct.PWQuality.html" title="struct pwquality::PWQuality">PWQuality</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#127' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#127' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-Drop' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/drop/trait.Drop.html" title="trait core::ops::drop::Drop">Drop</a> for <a class="struct" href="../pwquality/struct.PWQuality.html" title="struct pwquality::PWQuality">PWQuality</a></code><a href='#impl-Drop' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#596-603' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.drop' class="method"><span id='drop.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/drop/trait.Drop.html#tymethod.drop' class='fnname'>drop</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#597-602' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Executes the destructor for this type. <a href="https://doc.rust-lang.org/nightly/core/ops/drop/trait.Drop.html#tymethod.drop">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "pwquality";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Error","An error returned by the underlying library. The `UnknownError` should never be returned unless a new error code is added in `pwquality`."]],"struct":[["PWQuality","Representation of an instance of `pwquality`. Each instance has its own settings, that can be changed."]]});

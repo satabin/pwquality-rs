@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Error` enum in crate `pwquality`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Error">
+
+    <title>pwquality::Error - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum Error</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='index.html'>pwquality</a></p><script>window.sidebarCurrent = {name: 'Error', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>pwquality</a>::<wbr><a class="enum" href=''>Error</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/pwquality/lib.rs.html#34-66' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Error {
+    FatalFailure,
+    Integer,
+    CfgfileOpen,
+    CfgfileMalformed,
+    UnknownSetting,
+    NonIntSetting,
+    NonStrSetting,
+    MemAlloc,
+    TooSimilar,
+    MinDigits,
+    MinUppers,
+    MinLowers,
+    MinOthers,
+    MinLength,
+    Palindrome,
+    CaseChangesOnly,
+    Rotated,
+    MinClasses,
+    MaxConsecutive,
+    EmptyPassword,
+    SamePassword,
+    CracklibCheck,
+    Rng,
+    GenerationFailed,
+    UserCheck,
+    GecosCheck,
+    MaxClassRepeat,
+    BadWords,
+    MaxSequence,
+    UnknownError(<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>),
+}</pre><div class='docblock'><p>An error returned by the underlying library.
+The <code>UnknownError</code> should never be returned unless a new error
+code is added in <code>pwquality</code>.</p>
+</div><h2 id='variants' class='variants small-section-header'>
+                   Variants<a href='#variants' class='anchor'></a></h2>
+<span id='variant.FatalFailure' class='variant'><span id='FatalFailure.v' class='invisible'><code>FatalFailure</code></span></span><span id='variant.Integer' class='variant'><span id='Integer.v' class='invisible'><code>Integer</code></span></span><span id='variant.CfgfileOpen' class='variant'><span id='CfgfileOpen.v' class='invisible'><code>CfgfileOpen</code></span></span><span id='variant.CfgfileMalformed' class='variant'><span id='CfgfileMalformed.v' class='invisible'><code>CfgfileMalformed</code></span></span><span id='variant.UnknownSetting' class='variant'><span id='UnknownSetting.v' class='invisible'><code>UnknownSetting</code></span></span><span id='variant.NonIntSetting' class='variant'><span id='NonIntSetting.v' class='invisible'><code>NonIntSetting</code></span></span><span id='variant.NonStrSetting' class='variant'><span id='NonStrSetting.v' class='invisible'><code>NonStrSetting</code></span></span><span id='variant.MemAlloc' class='variant'><span id='MemAlloc.v' class='invisible'><code>MemAlloc</code></span></span><span id='variant.TooSimilar' class='variant'><span id='TooSimilar.v' class='invisible'><code>TooSimilar</code></span></span><span id='variant.MinDigits' class='variant'><span id='MinDigits.v' class='invisible'><code>MinDigits</code></span></span><span id='variant.MinUppers' class='variant'><span id='MinUppers.v' class='invisible'><code>MinUppers</code></span></span><span id='variant.MinLowers' class='variant'><span id='MinLowers.v' class='invisible'><code>MinLowers</code></span></span><span id='variant.MinOthers' class='variant'><span id='MinOthers.v' class='invisible'><code>MinOthers</code></span></span><span id='variant.MinLength' class='variant'><span id='MinLength.v' class='invisible'><code>MinLength</code></span></span><span id='variant.Palindrome' class='variant'><span id='Palindrome.v' class='invisible'><code>Palindrome</code></span></span><span id='variant.CaseChangesOnly' class='variant'><span id='CaseChangesOnly.v' class='invisible'><code>CaseChangesOnly</code></span></span><span id='variant.Rotated' class='variant'><span id='Rotated.v' class='invisible'><code>Rotated</code></span></span><span id='variant.MinClasses' class='variant'><span id='MinClasses.v' class='invisible'><code>MinClasses</code></span></span><span id='variant.MaxConsecutive' class='variant'><span id='MaxConsecutive.v' class='invisible'><code>MaxConsecutive</code></span></span><span id='variant.EmptyPassword' class='variant'><span id='EmptyPassword.v' class='invisible'><code>EmptyPassword</code></span></span><span id='variant.SamePassword' class='variant'><span id='SamePassword.v' class='invisible'><code>SamePassword</code></span></span><span id='variant.CracklibCheck' class='variant'><span id='CracklibCheck.v' class='invisible'><code>CracklibCheck</code></span></span><span id='variant.Rng' class='variant'><span id='Rng.v' class='invisible'><code>Rng</code></span></span><span id='variant.GenerationFailed' class='variant'><span id='GenerationFailed.v' class='invisible'><code>GenerationFailed</code></span></span><span id='variant.UserCheck' class='variant'><span id='UserCheck.v' class='invisible'><code>UserCheck</code></span></span><span id='variant.GecosCheck' class='variant'><span id='GecosCheck.v' class='invisible'><code>GecosCheck</code></span></span><span id='variant.MaxClassRepeat' class='variant'><span id='MaxClassRepeat.v' class='invisible'><code>MaxClassRepeat</code></span></span><span id='variant.BadWords' class='variant'><span id='BadWords.v' class='invisible'><code>BadWords</code></span></span><span id='variant.MaxSequence' class='variant'><span id='MaxSequence.v' class='invisible'><code>MaxSequence</code></span></span><span id='variant.UnknownError' class='variant'><span id='UnknownError.v' class='invisible'><code>UnknownError(<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code></span></span>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#33' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#33' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../pwquality/enum.Error.html" title="enum pwquality::Error">Error</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#33' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/pwquality/lib.rs.html#33' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "pwquality";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
