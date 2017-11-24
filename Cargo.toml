@@ -5,6 +5,7 @@ authors = ["Lucas Satabin <lucas.satabin@gnieh.org>"]
 description = "Binding for pwquality."
 homepage = "https://github.com/satabin/pwquality-rs"
 repository = "https://github.com/satabin/pwquality-rs"
+documentation = "https://satabin.github.io/pwquality-rs/pwquality/"
 readme = "README.markdown"
 keywords = ["password", "generation", "check", "pwquality"]
 license = "MIT"

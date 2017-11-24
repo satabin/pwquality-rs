@@ -2,6 +2,8 @@
 
 [pwquality](https://github.com/libpwquality/libpwquality/) binding for [rust](https://www.rust-lang.org/).
 
+[Documentation](https://satabin.github.io/pwquality-rs/pwquality/)
+
 
 ## Usage
 
