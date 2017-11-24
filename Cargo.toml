@@ -1,0 +1,13 @@
+[package]
+name = "pwquality"
+version = "0.1.0"
+authors = ["Lucas Satabin <lucas.satabin@gnieh.org>"]
+description = "Binding for pwquality."
+homepage = "https://github.com/satabin/pwquality-rs"
+repository = "https://github.com/satabin/pwquality-rs"
+readme = "README.markdown"
+keywords = ["password", "generation", "check", "pwquality"]
+license = "MIT"
+
+[dependencies]
+libc = "0.2"
