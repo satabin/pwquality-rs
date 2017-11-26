@@ -2,7 +2,7 @@
 // Licensed under the MIT license, see the LICENSE file or <http://opensource.org/licenses/MIT>
 extern crate libc;
 
-use libc::{c_char, c_void, c_int};
+use libc::{c_char, c_void, c_int, size_t};
 
 pub static PWQ_SETTING_DIFF_OK: c_int = 1;
 pub static PWQ_SETTING_MIN_LENGTH: c_int = 3;
@@ -111,5 +111,6 @@ extern {
 
     pub fn pwquality_generate(pwq: *const OpaqueSettings, entropy_bits: c_int, password: *mut *mut c_char) -> c_int;
     pub fn pwquality_check(pwq: *const OpaqueSettings, password: *const c_char, oldpassword: *const c_char, user: *const c_char, auxerror: *mut *mut c_void) -> c_int;
+    pub fn pwquality_strerror(buf: *const c_char, len: size_t, errcode: c_int, auxerror: *const c_void) -> *const c_char;
 
 }
