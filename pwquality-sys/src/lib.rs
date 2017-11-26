@@ -98,19 +98,21 @@ impl Error {
 
 }
 
-pub enum OpaqueSettings{}
+/// The opaque settings structure, instantiated by `pwquality`.
+#[allow(non_camel_case_types)]
+pub enum pwquality_settings_t{}
 
 extern {
-    pub fn pwquality_default_settings() -> *const OpaqueSettings;
-    pub fn pwquality_free_settings(pwq: *const OpaqueSettings);
-    pub fn pwquality_read_config(pwq: *const OpaqueSettings, cfgfile: *const c_char, auxerror: *mut *mut c_void) -> c_int;
-    pub fn pwquality_set_int_value(pwq: *const OpaqueSettings, setting: c_int, value: c_int) -> c_int;
-    pub fn pwquality_set_str_value(pwq: *const OpaqueSettings, setting: c_int, value: *const c_char) -> c_int;
-    pub fn pwquality_get_int_value(pwq: *const OpaqueSettings, setting: c_int, value: *mut c_int) -> c_int;
-    pub fn pwquality_get_str_value(pwq: *const OpaqueSettings, setting: c_int, value: *mut *mut c_char) -> c_int;
+    pub fn pwquality_default_settings() -> *const pwquality_settings_t;
+    pub fn pwquality_free_settings(pwq: *const pwquality_settings_t);
+    pub fn pwquality_read_config(pwq: *const pwquality_settings_t, cfgfile: *const c_char, auxerror: *mut *mut c_void) -> c_int;
+    pub fn pwquality_set_int_value(pwq: *const pwquality_settings_t, setting: c_int, value: c_int) -> c_int;
+    pub fn pwquality_set_str_value(pwq: *const pwquality_settings_t, setting: c_int, value: *const c_char) -> c_int;
+    pub fn pwquality_get_int_value(pwq: *const pwquality_settings_t, setting: c_int, value: *mut c_int) -> c_int;
+    pub fn pwquality_get_str_value(pwq: *const pwquality_settings_t, setting: c_int, value: *mut *mut c_char) -> c_int;
 
-    pub fn pwquality_generate(pwq: *const OpaqueSettings, entropy_bits: c_int, password: *mut *mut c_char) -> c_int;
-    pub fn pwquality_check(pwq: *const OpaqueSettings, password: *const c_char, oldpassword: *const c_char, user: *const c_char, auxerror: *mut *mut c_void) -> c_int;
+    pub fn pwquality_generate(pwq: *const pwquality_settings_t, entropy_bits: c_int, password: *mut *mut c_char) -> c_int;
+    pub fn pwquality_check(pwq: *const pwquality_settings_t, password: *const c_char, oldpassword: *const c_char, user: *const c_char, auxerror: *mut *mut c_void) -> c_int;
     pub fn pwquality_strerror(buf: *const c_char, len: size_t, errcode: c_int, auxerror: *const c_void) -> *const c_char;
 
 }

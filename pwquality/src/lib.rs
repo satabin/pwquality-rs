@@ -17,7 +17,7 @@ use std::path::Path;
 /// changed.
 #[derive(Debug)]
 pub struct PWQuality {
-    pwq: *const OpaqueSettings
+    pwq: *const pwquality_settings_t
 }
 
 impl PWQuality {
