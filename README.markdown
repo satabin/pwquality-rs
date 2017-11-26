@@ -9,7 +9,7 @@ Add the dependency to your `Cargo.toml` file.
 
 ```toml
 [dependencies]
-pwquality = "0.1"
+pwquality = "0.2"
 ```
 
 Then import it in your code.
